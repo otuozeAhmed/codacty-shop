@@ -11,7 +11,7 @@ By using docker we can easily set up project.
 ```bash
   1 - git clone https://github.com/otuozeAhmed/codacty-shop.git
   2 - cd codacty-shop
-  # Before the next step, rename .env.example to .env 
+  # Before the next step, create a file named .env and copy all the content of .env.example to it 
   # (Note: the values here are all examples just to get you up and running)
   3 - sudo make up
   4 - sudo make migrate
