@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-beat
+  labels:
+    deployment: celery-beat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod: celery-beat
+  template:
+    metadata:
+      labels:
+        pod: celery-beat
+    spec:
+      containers:
+        - name: celery-beat
+          image: ahmedrufai/celery:1.0
+          command: ['sh', '-c', "cd /app/core && celery -A shop beat -l INFO"]
+          resources:
+            limits:
+              memory: 1Gi
+              cpu: "2"
+            requests:
+              memory: 512Mi
+              cpu: "0.8"
+          envFrom:
+            - secretRef:
+                name: shop-secret
+            - configMapRef:
+                name: shop-config
