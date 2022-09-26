@@ -1,5 +1,5 @@
 
-# Shop Django App
+# Codacty SHop App
 
 This is a task project. However, you may use it whichever way you want in your personal project.
 ## How to set up?
