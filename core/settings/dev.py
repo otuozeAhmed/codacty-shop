@@ -2,7 +2,8 @@ from .base import *
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+
+ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
 
 # DATABASES = {
 #     "default": {
