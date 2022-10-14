@@ -4,7 +4,7 @@
 This is a task project. However, you may use it whichever way you want in your personal project.
 ## How to set up?
 
-By using docker we can easily set get up and running.
+By using docker we can easily get up and running.
 
 ###### To successfully set up this project ensure you have "Make" and "Docker" installed in your Mac or Linux environment or WSL2 (Windows users), enter the following commands in your terminal to get started:
 
