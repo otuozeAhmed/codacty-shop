@@ -6,7 +6,7 @@ This is a task project. However, you may use it whichever way you want in your p
 
 By using docker we can easily get up and running.
 
-####### Ensure "Make" and "Docker" is installed in your Mac or Linux environment or WSL2 (Windows users.
+ Ensure "Make" and "Docker" is installed in your Mac or Linux environment or WSL2 (Windows users.
  Enter the following commands in your terminal to get started:
 
 ```bash
